@@ -48,7 +48,7 @@ body {
   border-radius: 50px;
   margin: 10px;
   position: relative;
-  color: #fff;
+  color: #0e0e0e;
   cursor: pointer;
   flex: 0.5;
   transition: flex 0.7s ease-in;
@@ -57,4 +57,27 @@ body {
 .Back-panel h3 {
   font-size: 2rem;
   position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  margin: 0;
+  opacity: 0;
+}
+
+.Back-panel.active {
+  flex: 5;
+}
+
+.Back-panel.active h3 {
+  opacity: 1;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+
+  .Back-panel:nth-of-type(4),
+  .Back-panel:nth-of-type(5) {
+    display: none;
+  }
 }
