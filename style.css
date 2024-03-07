@@ -35,6 +35,10 @@ body {
   background-image: url('batman.jpg');
 }
 
+#six {
+  background-image: url('spider.jpg');
+}
+
 .container {
   display: flex;
   width: 90vw;
@@ -48,7 +52,12 @@ body {
   border-radius: 50px;
   margin: 10px;
   position: relative;
-  color: #0e0e0e;
+  color: #ffffffe3;
+  text-shadow: -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  border: 1px solid #000000;
   cursor: pointer;
   flex: 0.5;
   transition: flex 0.7s ease-in;
@@ -69,6 +78,7 @@ body {
 
 .Back-panel.active h3 {
   opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
 }
 
 @media (max-width: 480px) {
